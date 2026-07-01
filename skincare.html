@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="logocircle.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare - ÆTHERRA Holistic Beauty</title>
+    <meta name="description" content="Handcrafted, plant-based skincare for sensitive skin. ÆTHERRA offers gentle, effective formulations crafted with love.">
+    <meta name="keywords" content="natural skincare, sensitive skin, plant-based beauty, handcrafted skincare, ÆTHERRA Holistic Beauty">
+    <meta name="author" content="ÆTHERRA Holistic Beauty">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taraholisticbeauty.com/skincare.html">
+    <meta property="og:title" content="Skincare - ÆTHERRA Holistic Beauty">
+    <meta property="og:description" content="Handcrafted, plant-based skincare for sensitive souls.">
+    <meta property="og:image" content="https://taraholisticbeauty.com/postergirl1.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://taraholisticbeauty.com/skincare.html">
+    <meta property="twitter:title" content="Skincare - ÆTHERRA Holistic Beauty">
+    <meta property="twitter:description" content="Handcrafted, plant-based skincare for sensitive souls.">
+    <meta property="twitter:image" content="https://taraholisticbeauty.com/postergirl1.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-[#0a0a12]/80 backdrop-blur-xl fixed w-full z-10 border-b border-[#c97b3a]/10" style="backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0">
+                    <a href="index.html"><img class="h-20" src="logocircle.png" alt="ÆTHERRA Logo"></a>
+                </div>
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="text-[#c4b8a8] hover:text-[#d4a373] px-3 py-2 text-sm font-medium transition-slow">Home</a>
+                    <a href="skincare.html" class="text-[#d4a373] px-3 py-2 text-sm font-medium transition-slow">Skincare</a>
+                    <a href="jewelry.html" class="text-[#c4b8a8] hover:text-[#d4a373] px-3 py-2 text-sm font-medium transition-slow">Jewelry</a>
+                    <a href="index.html#about" class="text-[#c4b8a8] hover:text-[#d4a373] px-3 py-2 text-sm font-medium transition-slow">About</a>
+                    <a href="index.html#values" class="text-[#c4b8a8] hover:text-[#d4a373] px-3 py-2 text-sm font-medium transition-slow">Our Values</a>
+                    <a href="index.html#contact" class="text-[#c4b8a8] hover:text-[#d4a373] px-3 py-2 text-sm font-medium transition-slow">Contact</a>
+                    <button id="cart-button-desktop"
+                        class="text-[#c4b8a8] hover:text-[#d4a373] px-3 py-2 text-sm font-medium transition-slow relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count-badge absolute top-0 right-0 block h-4 w-4 transform -translate-y-1/2 translate-x-1/2 rounded-full ring-2 ring-white bg-red-500 text-white text-xs font-bold text-center leading-none hidden">0</span>
+                    </button>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-[#c4b8a8] hover:text-[#d4a373] hover:bg-[#1a1a2e] focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <button type="button" id="cart-button-mobile"
+                        class="ml-4 p-2 rounded-md text-[#c4b8a8] hover:text-[#d4a373] hover:bg-[#1a1a2e] focus:outline-none relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count-badge absolute top-0 right-0 block h-4 w-4 transform -translate-y-1/2 translate-x-1/2 rounded-full ring-2 ring-white bg-red-500 text-white text-xs font-bold text-center leading-none hidden">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#12121e] border-t border-[#c97b3a]/20 shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#c4b8a8] hover:text-[#d4a373] hover:bg-[#1a1a2e]">Home</a>
+                <a href="skincare.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#d4a373] hover:bg-[#1a1a2e]">Skincare</a>
+                <a href="jewelry.html" class="block px-3 py-2 rounded-md text-base font-medium text-[#c4b8a8] hover:text-[#d4a373] hover:bg-[#1a1a2e]">Jewelry</a>
+                <a href="index.html#about" class="block px-3 py-2 rounded-md text-base font-medium text-[#c4b8a8] hover:text-[#d4a373] hover:bg-[#1a1a2e]">About</a>
+                <a href="index.html#values" class="block px-3 py-2 rounded-md text-base font-medium text-[#c4b8a8] hover:text-[#d4a373] hover:bg-[#1a1a2e]">Our Values</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium text-[#c4b8a8] hover:text-[#d4a373] hover:bg-[#1a1a2e]">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero-gradient page-hero">
+        <div class="relative z-10">
+            <h1>Skincare</h1>
+            <p>Handcrafted, plant-based formulations for sensitive skin that craves calm and balance.</p>
+        </div>
+    </section>
+
+    <!-- Signature Product -->
+    <section class="py-16 bg-[#0a0a12]">
+        <div class="container">
+            <h2 class="section-title">Our Signature Product</h2>
+            <p class="section-sub">A simple, honest ritual that brings comfort, confidence, and glow.</p>
+            <div class="flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8">
+                <div class="w-full lg:w-1/2 max-w-md">
+                    <div class="relative product-card">
+                        <div class="image-wrap">
+                            <img src="new_lotion.jpg" alt="ÆTHERRA Intense Hydration Cream">
+                        </div>
+                        <div class="info">
+                            <p class="mt-2 text-xs text-[#8a7e72] italic">Ingredients: coconut oil, shea butter, cocoa butter, castor oil, walnut oil, beeswax, matcha powder.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 max-w-md flex flex-col justify-between">
+                    <div>
+                        <h3 class="title-font text-2xl font-bold text-[#d4a373] mb-2">ÆTHERRA Intense Hydration Cream</h3>
+                        <p class="text-[#c4b8a8] mb-6">Our all-natural lotion specially formulated for sensitive skin. Enriched with shea butter, coconut oil, and healing botanicals for deep hydration that soothes irritation.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-[#d4a373] mb-2">Key Benefits:</h4>
+                            <ul class="list-disc pl-5 text-[#c4b8a8] space-y-1">
+                                <li>Calms redness and irritation</li>
+                                <li>Restores skin's moisture barrier</li>
+                                <li>Non-greasy, fast-absorbing formula</li>
+                                <li>Free from parabens, sulfates, and synthetic fragrances</li>
+                                <li>Vegan and cruelty-free</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl font-bold text-[#d4a373] mr-4">$21.99</span>
+                            <span class="text-sm text-[#6b6058]">(1.7 oz / 50 g)</span>
+                        </div>
+                        <button onclick="cart.addItem({id: 'lotion', name: 'ÆTHERRA Intense Hydration Cream', price: 21.99, image: 'new_lotion.jpg'})"
+                            class="btn-primary w-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anti-Inflammatory Cream -->
+    <section class="py-16 bg-[#0d0d18]">
+        <div class="container">
+            <h2 class="section-title">Our Intensive Anti-Inflammatory Cream</h2>
+            <p class="section-sub">Experience the power of nature's most sacred healers.</p>
+            <div class="flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8">
+                <div class="w-full lg:w-1/2 max-w-md">
+                    <div class="relative product-card">
+                        <div class="image-wrap">
+                            <img src="new_cream.jpg" alt="ÆTHERRA Deep Restorative Cream">
+                        </div>
+                        <div class="info">
+                            <p class="mt-2 text-xs text-[#8a7e72] italic">Ingredients: cocoa butter, coconut oil, shea butter, sour cherry oil, moringa oil, kigelia oil, tree resin, hibiscus powder.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 max-w-md flex flex-col justify-between">
+                    <div>
+                        <h3 class="title-font text-2xl font-bold text-[#d4a373] mb-2">ÆTHERRA Deep Restorative Cream</h3>
+                        <p class="text-[#c4b8a8] mb-6">This rich, restorative cream blends frankincense, myrrh, and dragon's blood to create a protective barrier that locks in moisture and soothes dry, cracked, or irritated skin.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-[#d4a373] mb-2">Key Benefits:</h4>
+                            <ul class="list-disc pl-5 text-[#c4b8a8] space-y-1">
+                                <li>Deeply nourishes and restores dry, damaged, or sensitive skin</li>
+                                <li>Infused with Dragon's Blood resin to calm inflammation and support skin repair</li>
+                                <li>Frankincense & Myrrh promote healing, rejuvenation, and cellular renewal</li>
+                                <li>Creates a protective barrier to lock in moisture and shield against irritants</li>
+                                <li>100% natural, non-toxic, and gentle</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl font-bold text-[#d4a373] mr-4">$27.99</span>
+                            <span class="text-sm text-[#6b6058]">(1.05 oz / 30 g)</span>
+                        </div>
+                        <button onclick="cart.addItem({id: 'cream', name: 'ÆTHERRA Deep Restorative Cream', price: 27.99, image: 'new_cream.jpg'})"
+                            class="btn-primary w-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solid Perfume -->
+    <section class="py-16 bg-[#0a0a12]">
+        <div class="container">
+            <h2 class="section-title">Our All-Natural Solid Perfume</h2>
+            <p class="section-sub">A gentle breath of calm and deep serenity, wherever you go.</p>
+            <div class="flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8">
+                <div class="w-full lg:w-1/2 max-w-md">
+                    <div class="relative product-card">
+                        <div class="image-wrap">
+                            <img src="new_perfume.jpg" alt="ÆTHERRA Floral Calm Solid Perfume">
+                        </div>
+                        <div class="info">
+                            <p class="mt-2 text-xs text-[#8a7e72] italic">Ingredients: coconut oil, beeswax, essential oils.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 max-w-md flex flex-col justify-between">
+                    <div>
+                        <h3 class="title-font text-2xl font-bold text-[#d4a373] mb-2">ÆTHERRA Floral Calm Solid Perfume</h3>
+                        <p class="text-[#c4b8a8] mb-6">A soothing floral blend crafted to calm the senses and elevate your daily ritual. Made with nourishing beeswax and coconut oil, this pocket-sized perfume melts into skin, releasing a gentle, long-lasting scent.</p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-[#d4a373] mb-2">Key Benefits:</h4>
+                            <ul class="list-disc pl-5 text-[#c4b8a8] space-y-1">
+                                <li>Chamomile & Lavender to ease stress and invite calm</li>
+                                <li>Jasmine & Geranium for soft floral elegance</li>
+                                <li>Solid, alcohol-free formula for sensitive skin</li>
+                                <li>Travel-friendly and mess-free</li>
+                                <li>100% natural, non-toxic, and gentle</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl font-bold text-[#d4a373] mr-4">$12.99</span>
+                            <span class="text-sm text-[#6b6058]">(0.35 oz / 10 g)</span>
+                        </div>
+                        <button onclick="cart.addItem({id: 'perfume', name: 'ÆTHERRA Floral Calm Solid Perfume', price: 12.99, image: 'new_perfume.jpg'})"
+                            class="btn-primary w-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="py-16 bg-[#12121e]">
+        <div class="container">
+            <h2 class="section-title">Nature's Finest Ingredients</h2>
+            <p class="section-sub">We carefully select only the purest botanical ingredients known for their healing properties.</p>
+            <div class="ingredient-grid">
+                <div class="ingredient-card bg-[#1a1a2e] p-6 rounded-lg text-center transition-slow border border-muted-teal\/10">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-muted-teal\/15 flex items-center justify-center">
+                        <i class="fas fa-leaf text-muted-teal text-3xl"></i></div>
+                    <h3 class="font-semibold text-[#d4a373] mb-2">Shea Butter</h3>
+                    <p class="text-sm text-[#8a7e72]">Deeply moisturizing and anti-inflammatory</p>
+                </div>
+                <div class="ingredient-card bg-[#1a1a2e] p-6 rounded-lg text-center transition-slow border border-muted-teal\/10">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-muted-teal\/15 flex items-center justify-center">
+                        <i class="fas fa-leaf text-muted-teal text-3xl"></i></div>
+                    <h3 class="font-semibold text-[#d4a373] mb-2">Coconut Oil</h3>
+                    <p class="text-sm text-[#8a7e72]">Nourishes and protects the skin barrier</p>
+                </div>
+                <div class="ingredient-card bg-[#1a1a2e] p-6 rounded-lg text-center transition-slow border border-muted-teal\/10">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-muted-teal\/15 flex items-center justify-center">
+                        <i class="fas fa-leaf text-muted-teal text-3xl"></i></div>
+                    <h3 class="font-semibold text-[#d4a373] mb-2">Cocoa Butter</h3>
+                    <p class="text-sm text-[#8a7e72]">Rich in antioxidants, improves elasticity</p>
+                </div>
+                <div class="ingredient-card bg-[#1a1a2e] p-6 rounded-lg text-center transition-slow border border-muted-teal\/10">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-muted-teal\/15 flex items-center justify-center">
+                        <i class="fas fa-leaf text-muted-teal text-3xl"></i></div>
+                    <h3 class="font-semibold text-[#d4a373] mb-2">Beeswax</h3>
+                    <p class="text-sm text-[#8a7e72]">Locks moisture, breathable barrier</p>
+                </div>
+                <div class="ingredient-card bg-[#1a1a2e] p-6 rounded-lg text-center transition-slow border border-muted-teal\/10">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-muted-teal\/15 flex items-center justify-center">
+                        <i class="fas fa-leaf text-muted-teal text-3xl"></i></div>
+                    <h3 class="font-semibold text-[#d4a373] mb-2">Castor Oil</h3>
+                    <p class="text-sm text-[#8a7e72]">Promotes healing, reduces inflammation</p>
+                </div>
+                <div class="ingredient-card bg-[#1a1a2e] p-6 rounded-lg text-center transition-slow border border-muted-teal\/10">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-muted-teal\/15 flex items-center justify-center">
+                        <i class="fas fa-tree text-muted-teal text-3xl"></i></div>
+                    <h3 class="font-semibold text-[#d4a373] mb-2">Tree Resin</h3>
+                    <p class="text-sm text-[#8a7e72]">A proprietary blend of over 10 tree resins for deep healing and protection</p>
+                </div>
+                <div class="ingredient-card bg-[#1a1a2e] p-6 rounded-lg text-center transition-slow border border-muted-teal\/10">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-muted-teal\/15 flex items-center justify-center">
+                        <i class="fas fa-seedling text-muted-teal text-3xl"></i></div>
+                    <h3 class="font-semibold text-[#d4a373] mb-2">Batana Oil</h3>
+                    <p class="text-sm text-[#8a7e72]">Deeply restorative, rich in essential fatty acids</p>
+                </div>
+                <div class="ingredient-card bg-[#1a1a2e] p-6 rounded-lg text-center transition-slow border border-muted-teal\/10">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-muted-teal\/15 flex items-center justify-center">
+                        <i class="fas fa-seedling text-muted-teal text-3xl"></i></div>
+                    <h3 class="font-semibold text-[#d4a373] mb-2">Hemp Seed Oil</h3>
+                    <p class="text-sm text-[#8a7e72]">Balances oil production, calms irritation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a0a12] border-t border-[#c97b3a]/20 text-[#e8e0d8] py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="mb-8 md:mb-0">
+                    <a href="index.html"><img src="logocircle.png" alt="ÆTHERRA Logo" class="h-12 mb-4"></a>
+                    <p class="text-[#8a7e72] text-sm">The Essence of the Ethereal. Handcrafted skincare and copper jewelry for sensitive souls.</p>
+                </div>
+                <div>
+                    <h3 class="title-font text-lg font-semibold text-[#d4a373] mb-4">Collections</h3>
+                    <ul class="space-y-2">
+                        <li><a href="skincare.html" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow text-sm">Skincare</a></li>
+                        <li><a href="jewelry.html" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow text-sm">Jewelry</a></li>
+                        <li><a href="index.html#bestsellers" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow text-sm">Bestsellers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="title-font text-lg font-semibold text-[#d4a373] mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow text-sm">About</a></li>
+                        <li><a href="index.html#values" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow text-sm">Our Values</a></li>
+                        <li><a href="index.html#contact" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow text-sm">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="title-font text-lg font-semibold text-[#d4a373] mb-4">Info</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow text-sm">Shipping Policy</a></li>
+                        <li><a href="#" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow text-sm">Returns & Refunds</a></li>
+                        <li><a href="#" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow text-sm">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#c97b3a]/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#8a7e72] text-sm mb-4 md:mb-0">&copy; 2025 ÆTHERRA Holistic Beauty. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow"><i class="fab fa-cc-visa text-2xl"></i></a>
+                    <a href="#" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow"><i class="fab fa-cc-mastercard text-2xl"></i></a>
+                    <a href="#" class="text-[#8a7e72] hover:text-[#d4a373] transition-slow"><i class="fab fa-cc-paypal text-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="fixed inset-0 z-50 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm transition-opacity"></div>
+        <div class="fixed inset-0 overflow-hidden">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                    <div class="pointer-events-auto w-screen max-w-md">
+                        <div class="flex h-full flex-col overflow-y-auto bg-[#12121e] shadow-xl border-l border-[#c97b3a]/20">
+                            <div class="flex-1 px-4 py-6 sm:px-6">
+                                <div class="flex items-start justify-between">
+                                    <h2 class="text-lg font-medium text-[#d4a373]" id="slide-over-title">Shopping Cart</h2>
+                                    <div class="ml-3 flex h-7 items-center">
+                                        <button type="button" id="close-cart" class="relative -m-2 p-2 text-[#8a7e72] hover:text-[#d4a373]">
+                                            <span class="absolute -inset-0.5"></span>
+                                            <span class="sr-only">Close panel</span>
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mt-8">
+                                    <div class="flow-root">
+                                        <div id="cart-items" class="divide-y divide-[#c97b3a]/10"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-[#c97b3a]/20 px-4 py-6 sm:px-6">
+                                <div class="flex justify-between text-base font-medium text-[#e8e0d8] mb-4">
+                                    <p>Subtotal</p>
+                                    <p id="cart-total">$0.00</p>
+                                </div>
+                                <p class="mt-0.5 text-sm text-[#6b6058] mb-6">Shipping and taxes calculated at checkout.</p>
+                                <div id="paypal-button-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AQusrRR8FDEWdWUX_JnDiVuXk4VB75ZjzJvtIvXIKLAVb6ToVHW3dzWzPgiFv8d0iXjYBOs2b9ykikyM&currency=CAD&locale=en_CA"></script>
+    <script src="cart.js"></script>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
