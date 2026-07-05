@@ -25,24 +25,10 @@
 .border-muted-teal\/10 { border-color: rgba(90, 122, 122, 0.1); }
 .border-muted-purple\/10 { border-color: rgba(122, 107, 142, 0.1); }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--dark-bg);
-    color: var(--text-primary);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.title-font {
-    font-family: 'Playfair Display', serif;
+.hero-gradient {
+    background: linear-gradient(180deg, #05050f 0%, #0a0a1a 20%, #0f0a20 40%, #120d24 60%, #0d0d1a 80%, #080812 100%);
+    position: relative;
+    overflow: hidden;
 }
 
 /* === Hero === */
